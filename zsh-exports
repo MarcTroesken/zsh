@@ -3,7 +3,7 @@
 HISTSIZE=1000000
 SAVEHIST=1000000
 
-export PATH="$HOME/.local/bin":$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/.composer/vendor/bin:$PATH
 export CLICOLOR=1
 
 # AWS Stuff
@@ -13,5 +13,7 @@ export RP_INFRA_TOOLS_ROOT=$HOME/Code/aws/infrastructure-tools
 export RP_ROLE_NAME=allow-dev-access-from-other-accounts
 source $RP_INFRA_TOOLS_ROOT/init.sh
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+

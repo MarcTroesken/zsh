@@ -3,6 +3,7 @@ alias vim="nvim"
 alias v="nvim"
 alias gaa="git add ."
 alias gc="git commit -m"
+alias gp="git push"
 alias dc="docker compose"
 alias tuns01="ssh mtroesken@docker-s01.nexinto1.ratepay.com -L 8500:localhost:8500"
 alias tunp01="ssh mtroesken@docker-downstream-p01.nexinto1.ratepay.com -L 8500:localhost:8500"
@@ -14,3 +15,4 @@ alias ll="ls -l"
 
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias nvimrc='nvim ~/.config/nvim/'
+
